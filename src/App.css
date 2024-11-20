@@ -160,10 +160,9 @@
 
 .photo img {
     width: 100%;
-    height: auto;
+    height: 600px;
     display: flex;
     margin-top: 130px;
-
 }
 
 .profile-container {
@@ -176,13 +175,12 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-
 }
 
 .avatar-container {
     background-color: #ccc;
     position: absolute;
-    top: 98%;
+    top: 85%;
     left: 25%;
     transform: translateX(-50%);
     z-index: 10;
@@ -190,45 +188,37 @@
     padding: 10px;
 }
 
-
-
 .profile-name {
     margin-bottom: 40px;
 }
 
 .profile-card {
-    margin-top: 150px;
+    margin-top: 40px;
     margin-left: 35%;
     align-items: baseline;
 }
 
 .profile-list {
     list-style-type: none;
-    /* Removes default list markers */
     padding: 0;
-    /* Removes default padding */
     margin: 0;
-    /* Removes default margin */
 }
 
 .profile-item {
     display: flex;
-    /* Aligns items in a row */
     align-items: center;
-    /* Vertically aligns icon and text */
     margin-bottom: 8px;
-    /* Adds space between list items */
     list-style-type: none;
 }
 
-.profile-icon {
+.profile-item::before {
+    content: '\2714'; /* Unicode checkmark symbol */
+    font-size: 24px; /* Set the size of the checkmark */
+    color: rgb(10, 182, 70); /* Set the color of the checkmark */
     margin-right: 8px;
-    /* Adds space between the icon and text */
 }
-
 .profile-text {
     font-size: 16px;
-    /* Adjust font size */
     list-style-type: none;
 }
 
@@ -242,20 +232,37 @@
     }
 
     .avatar-container {
-        display: flex; /* Use flexbox for centering */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically if necessary */
-        margin: 0 auto; /* Ensure the container itself is centered */
-        
-        transform: none; /* Remove the transform property */
-        top: 38%; /* Clear the top positioning */
+        display: flex;
+        /* Use flexbox for centering */
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically if necessary */
+        margin: 0 auto;
+        /* Ensure the container itself is centered */
+        transform: none;
+        /* Remove the transform property */
+        top: 58%;
+        /* Clear the top positioning */
         left: 35%;
     }
 
     .profile-avatar {
-        width: 150px; /* Adjust size for smaller screens if necessary */
+        width: 150px;
+        /* Adjust size for smaller screens if necessary */
         height: 150px;
-        
+
+    }
+
+    .profile-card {
+        display: block;
+        margin-top: 95px;
+        margin-left: 5%;
+
+    }
+
+    .profile-card h1 {
+        text-align: center;
     }
 }
 

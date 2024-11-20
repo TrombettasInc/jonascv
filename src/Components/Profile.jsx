@@ -1,5 +1,5 @@
 import React from 'react'
-import { FcCheckmark } from "react-icons/fc";
+
 
 const Profile = () => {
   return (
@@ -11,16 +11,15 @@ const Profile = () => {
         <h1 className='profile-name'>Jonas Dobrint</h1>
         <ul className="profile-list">
           <li className="profile-item">
-            <FcCheckmark className="profile-icon" />
-            <span className="profile-text">Qualification 1</span>
+            <span className="profile-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 1</span>
           </li>
           <li className="profile-item">
-            <FcCheckmark className="profile-icon" />
-            <span className="profile-text">Qualification 2</span>
+            
+            <span className="profile-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  2</span>
           </li>
           <li className="profile-item">
-            <FcCheckmark className="profile-icon" />
-            <span className="profile-text">Qualification 3</span>
+            
+            <span className="profile-text">Lorem ipsum dolor sit amet, consectetur  3</span>
           </li>
         </ul>
       </div>
