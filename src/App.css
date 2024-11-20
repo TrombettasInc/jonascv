@@ -2,51 +2,52 @@
     margin: 0;
     padding: 0;
     font-family: Verdana;
-  }
-  
-  .header-container {
+}
+
+.header-container {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Para ocupar toda a largura */
-    background-color: #fff; /* Cor de fundo */
-    z-index: 1000; /* Certifique-se de que o header fique acima de outros elementos */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona um efeito de sombra */
-    padding: 1rem; /* Espaçamento interno */
-  }
-  
-  .header-content {
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    /* Certifique-se de que o header fique acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.header-content {
     display: flex;
     justify-content: space-around;
-  }
-  
-  .header-content a {
+}
+
+.header-content a {
     text-decoration: none;
     color: #50524f;
     padding-right: 20px;
-  }
-  
-  .icons-header {
+}
+
+.icons-header {
     padding-right: 10px;
     color: rgb(10, 182, 70);
-  }
-  
-  .header-container a:hover {
+}
+
+.header-container a:hover {
     color: #9d9f9c;
-  }
-  
-  .logo {
+}
+
+.logo {
     width: 130px;
     height: 130px;
     border-radius: 50%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 100px;
-  }
-  
-  /* Default Styles: Show hamburger on large screens */
-  .hamburger {
-    display: block; /* Show hamburger icon on large screens */
+}
+
+.hamburger {
+    display: block;
+    /* Show hamburger icon on large screens */
     position: fixed;
     top: 100px;
     right: 260px;
@@ -56,137 +57,209 @@
     border-radius: 50%;
     border: none;
     cursor: pointer;
-  }
-  
-  .hamburger svg {
+}
+
+.hamburger svg {
     font-size: 23px;
-  }
-  
-  .hamburger:hover {
+}
+
+.hamburger:hover {
     color: #9d9f9c;
-  }
-  
-  /* Default Dropdown Menu */
-  .menu {
+}
+
+.menu {
     display: none;
     position: absolute;
-    top: 165px; /* Adjust to appear below the button */
+    top: 165px;
+    /* Adjust to appear below the button */
     right: 290px;
     background: linear-gradient(to bottom, #c6f656, #66e843);
     padding: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 100;
-    opacity: 80%;
-  }
-  
-  .menu ul {
+    opacity: 100%;
+}
+
+.menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .menu ul li {
+}
+
+.menu ul li {
     margin: 10px 0;
-  }
-  
-  .menu ul li a {
+}
+
+.menu ul li a {
     color: white;
     text-decoration: none;
     font-size: 25px;
-  }
-  
-  /* Show dropdown menu when active */
-  .menu.active {
+}
+
+/* Show dropdown menu when active */
+.menu.active {
     display: block;
-  }
-  
-  /* For screens larger than 1024px: show hamburger icon */
-  @media (min-width: 1025px) {
+}
+
+/* For screens larger than 1024px: show hamburger icon */
+@media (min-width: 1025px) {
     .hamburger {
-      display: block; /* Show hamburger icon */
+        display: block;
+        /* Show hamburger icon */
     }
-  
+
     .header-content {
-      display: flex; /* Keep header content visible */
+        display: flex;
+        /* Keep header content visible */
     }
-  
+
     .menu {
-      display: none; /* Ensure the dropdown is hidden */
+        display: none;
+        /* Ensure the dropdown is hidden */
     }
-  }
-  
-  /* For smaller screens (<= 1024px): Hide the hamburger icon and dropdown */
-  @media (max-width: 1024px) {
+}
+
+/* For smaller screens (<= 1024px): Hide the hamburger icon and dropdown */
+@media (max-width: 1024px) {
     .hamburger {
-      display: none; /* Hide hamburger on small screens */
+        display: none;
+        /* Hide hamburger on small screens */
     }
-  
+
     .menu {
-      display: none; /* Hide dropdown menu on small screens */
+        display: none;
+        /* Hide dropdown menu on small screens */
     }
-  
+
     .header-content {
-      display: block; /* Normal header content on smaller screens */
+        display: block;
+        /* Normal header content on smaller screens */
     }
-  }
-  
-  .photo img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .form-container {
+}
+
+.form-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 24px;
     margin-bottom: 10px;
-  }
-  
-  p {
+}
+
+p {
     font-size: 14px;
     color: #b7afaf;
     margin-bottom: 20px;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 15px;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  input,
-  select,
-  textarea {
+}
+
+input,
+select,
+textarea {
     width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  textarea {
+}
+
+textarea {
     resize: vertical;
     height: 100px;
-  }
-  
-  .button-form {
+}
+
+.button-form {
     padding: 10px 20px;
     background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .button-form:hover {
+}
+
+.button-form:hover {
     background-color: #45a049;
+
+}
+
+
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 70px;
+}
+
+.profile-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+
+.avatar-container {
+  background-color: #ccc;
+  position: absolute; /* Allows precise positioning */
+  top: 85%; /* Moves the avatar upwards */
+  left: 25%; /* Centers it horizontally */
+  transform: translateX(-50%); /* Corrects centering */
+  z-index: 10; /* Ensures it appears on top of the photo */
+  border-radius: 50%;
+  padding: 10px;
+
+}
+
+@media (max-width: 1024px) {
+    .avatar-container{
+    top: 30%;
+    }
+}
+.profile-name {
+    margin-bottom: 40px;
+}
+
+.profile-card {
+    margin-top: 150px;
+    margin-left: 35%;
+    align-items: baseline;
+}
+
+.profile-list {
+    list-style-type: none; /* Removes default list markers */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
   }
   
+  .profile-item {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Vertically aligns icon and text */
+    margin-bottom: 8px; /* Adds space between list items */
+    list-style-type: none;
+  }
+  
+  .profile-icon {
+    margin-right: 8px; /* Adds space between the icon and text */
+  }
+  
+  .profile-text {
+    font-size: 16px; /* Adjust font size */
+    list-style-type: none;
+  }

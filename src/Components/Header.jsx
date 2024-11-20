@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
+import fotoP from "../assets/fotoP.jpeg"
 
 const Header = () => {
 
@@ -22,11 +23,13 @@ const Header = () => {
           <a href={`tel:${phone}`} className="contact-link">
             {phone}
           </a>
-          <Navbar />
-        </div>
+          <Navbar /> 
       </div>
-      
+      </div>
     </header>
+    <div className='photo'>
+      <img src={fotoP} alt="photo" />
+    </div>
     
     </>
   )
