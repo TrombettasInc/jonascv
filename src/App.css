@@ -29,9 +29,10 @@
     padding-right: 20px;
 }
 
-.contact-info{
+.contact-info {
     display: flex;
 }
+
 .icons-header {
     padding-right: 10px;
     color: rgb(10, 182, 70);
@@ -45,7 +46,6 @@
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 100px;
 }
@@ -182,25 +182,15 @@
 .avatar-container {
     background-color: #ccc;
     position: absolute;
-    /* Allows precise positioning */
-    top: 85%;
-    /* Moves the avatar upwards */
+    top: 98%;
     left: 25%;
-    /* Centers it horizontally */
     transform: translateX(-50%);
-    /* Corrects centering */
     z-index: 10;
-    /* Ensures it appears on top of the photo */
     border-radius: 50%;
     padding: 10px;
-
 }
 
-@media (max-width: 1024px) {
-    .avatar-container {
-        top: 30%;
-    }
-}
+
 
 .profile-name {
     margin-bottom: 40px;
@@ -242,13 +232,31 @@
     list-style-type: none;
 }
 
+
 @media (max-width: 480px) {
     .photo img {
         width: 100%;
         /* Full width for extra small screens */
-        height: auto;
+        height: 19rem;
+        background-size: cover;
     }
 
+    .avatar-container {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically if necessary */
+        margin: 0 auto; /* Ensure the container itself is centered */
+        
+        transform: none; /* Remove the transform property */
+        top: 38%; /* Clear the top positioning */
+        left: 35%;
+    }
+
+    .profile-avatar {
+        width: 150px; /* Adjust size for smaller screens if necessary */
+        height: 150px;
+        
+    }
 }
 
 .form-container {
