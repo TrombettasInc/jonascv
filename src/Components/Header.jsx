@@ -13,7 +13,7 @@ const Header = () => {
     <div className='header-main'>
     <header className="header-container">
       <div className="header-content">
-      <img className='logo' src="./src/assets/logo.png" alt="logo" />
+      <img className='logo' src="./src/assets/logo2.png" alt="logo" />
         <div className="contact-info">
         <FaEnvelope className='icons-header'/>
           <a href={`mailto:${email}`} className="contact-link">
