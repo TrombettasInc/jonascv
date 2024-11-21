@@ -1,323 +1,319 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
 }
 
 .header-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 1000;
-    /* Certifique-se de que o header fique acima de outros elementos */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    height: 130px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  /* Certifique-se de que o header fique acima de outros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  height: 130px;
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-around;
-
+  display: flex;
+  justify-content: space-around;
 }
 
 .header-content a {
-    text-decoration: none;
-    color: #50524f;
-    padding-right: 20px;
+  text-decoration: none;
+  color: #50524f;
+  padding-right: 20px;
 }
 
 .contact-info {
-    display: flex;
+  display: flex;
 }
 
 .icons-header {
-    padding-right: 10px;
-    color: rgb(10, 182, 70);
+  padding-right: 10px;
+  color: #4caf50;
 }
 
 .header-container a:hover {
-    color: #9d9f9c;
+  color: #9d9f9c;
 }
 
 .logo {
-    width: 130px;
-    height:130px;
-    margin-bottom: 10px;
-    margin-left: 100px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+  border-radius: 50%;
 }
 
 .hamburger {
-    display: block;
-    /* Show hamburger icon on large screens */
-    position: fixed;
-    top: 100px;
-    right: 260px;
-    width: 46px;
-    height: 46px;
-    background: #a3dd1b;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
+  display: block;
+  /* Show hamburger icon on large screens */
+  position: fixed;
+  top: 100px;
+  right: 260px;
+  width: 46px;
+  height: 46px;
+  background: #4caf50;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
 .hamburger svg {
-    font-size: 23px;
+  font-size: 23px;
 }
 
 .hamburger:hover {
-    color: #9d9f9c;
+  color: #9d9f9c;
 }
 
 .menu {
-    display: none;
-    position: absolute;
-    top: 165px;
-    /* Adjust to appear below the button */
-    right: 290px;
-    background: linear-gradient(to bottom, #c6f656, #66e843);
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-    opacity: 100%;
+  display: none;
+  position: absolute;
+  top: 165px;
+  /* Adjust to appear below the button */
+  right: 290px;
+  background: linear-gradient(to bottom, #c6f656, #66e843);
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  opacity: 100%;
 }
 
 .menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu ul li {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
 }
 
-/* Show dropdown menu when active */
 .menu.active {
-    display: block;
+  display: block;
 }
 
 /* For screens larger than 1024px: show hamburger icon */
 @media (min-width: 1025px) {
-    .hamburger {
-        display: block;
-        /* Show hamburger icon */
-    }
+  .hamburger {
+    display: block;
+    /* Show hamburger icon */
+  }
 
-    .header-content {
-        display: flex;
-        /* Keep header content visible */
-    }
+  .header-content {
+    display: flex;
+    /* Keep header content visible */
+  }
 
-    .menu {
-        display: none;
-        /* Ensure the dropdown is hidden */
-    }
+  .menu {
+    display: none;
+    /* Ensure the dropdown is hidden */
+  }
 }
 
 /* For smaller screens (<= 1024px): Hide the hamburger icon and dropdown */
 @media (max-width: 1024px) {
-    .hamburger {
-        display: none;
-        /* Hide hamburger on small screens */
-    }
+  .hamburger {
+    display: none;
+    /* Hide hamburger on small screens */
+  }
 
-    .menu {
-        display: none;
-        /* Hide dropdown menu on small screens */
-    }
+  .menu {
+    display: none;
+    /* Hide dropdown menu on small screens */
+  }
 
-    .header-content {
-        display: flex;
-        /* Normal header content on smaller screens */
-    }
+  .header-content {
+    display: flex;
+    /* Normal header content on smaller screens */
+  }
 
-    .contact-info {
-        display: block;
-        position: relative;
-        font-size: 15px;
-        margin-top: 10%;
-    }
+  .contact-info {
+    display: block;
+    position: relative;
+    font-size: 15px;
+    margin-top: 10%;
+  }
 
-    .icons-header {
-        align-items: center;
-        justify-content: space-around;
-    }
+  .icons-header {
+    align-items: center;
+    justify-content: space-around;
+  }
 
-    .logo {
-        margin-left: 10%;
-    }
+  .logo {
+    margin-left: 10%;
+  }
 }
 
 .photo img {
-    width: 100%;
-    height: 600px;
-    display: flex;
-    margin-top: 130px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  margin-top: 130px;
 }
 
 .profile-container {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 70px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 70px;
 }
 
 .profile-avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .avatar-container {
-    background-color: #ccc;
-    position: absolute;
-    top: 85%;
-    left: 25%;
-    transform: translateX(-50%);
-    z-index: 10;
-    border-radius: 50%;
-    padding: 10px;
+  background-color: #ccc;
+  position: absolute;
+  top: 85%;
+  left: 25%;
+  transform: translateX(-50%);
+  z-index: 10;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .profile-name {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .profile-card {
-    margin-top: 40px;
-    margin-left: 35%;
-    align-items: baseline;
+  margin-top: 40px;
+  margin-left: 35%;
+  align-items: baseline;
 }
 
 .profile-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .profile-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-    list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  list-style-type: none;
 }
 
 .profile-item::before {
-    content: '\2714'; /* Unicode checkmark symbol */
-    font-size: 24px; /* Set the size of the checkmark */
-    color: rgb(10, 182, 70); /* Set the color of the checkmark */
-    margin-right: 8px;
+  content: "\2714"; /* Unicode checkmark symbol */
+  font-size: 24px; /* Set the size of the checkmark */
+  color: rgb(10, 182, 70); /* Set the color of the checkmark */
+  margin-right: 8px;
 }
 
 .profile-text {
-    font-size: 16px;
-    list-style-type: none;
+  font-size: 16px;
+  list-style-type: none;
 }
 
-
 @media (max-width: 480px) {
-    .photo img {
-        width: 100%;
-        /* Full width for extra small screens */
-        height: 19rem;
-        background-size: cover;
-    }
+  .photo img {
+    width: 100%;
+    /* Full width for extra small screens */
+    height: 19rem;
+    background-size: cover;
+  }
 
-    .avatar-container {
-        display: flex;
-        /* Use flexbox for centering */
-        justify-content: center;
-        /* Center horizontally */
-        align-items: center;
-        /* Center vertically if necessary */
-        margin: 0 auto;
-        /* Ensure the container itself is centered */
-        transform: none;
-        /* Remove the transform property */
-        top: 58%;
-        /* Clear the top positioning */
-        left: 35%;
-    }
+  .avatar-container {
+    display: flex;
+    /* Use flexbox for centering */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically if necessary */
+    margin: 0 auto;
+    /* Ensure the container itself is centered */
+    transform: none;
+    /* Remove the transform property */
+    top: 58%;
+    /* Clear the top positioning */
+    left: 35%;
+  }
 
-    .profile-avatar {
-        width: 150px;
-        /* Adjust size for smaller screens if necessary */
-        height: 150px;
+  .profile-avatar {
+    width: 150px;
+    /* Adjust size for smaller screens if necessary */
+    height: 150px;
+  }
 
-    }
+  .profile-card {
+    display: block;
+    margin-top: 95px;
+    margin-left: 5%;
+  }
 
-    .profile-card {
-        display: block;
-        margin-top: 95px;
-        margin-left: 5%;
-
-    }
-
-    .profile-card h1 {
-        text-align: center;
-    }
+  .profile-card h1 {
+    text-align: center;
+  }
 }
 
 .form-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 p {
-    font-size: 14px;
-    color: #b7afaf;
-    margin-bottom: 20px;
+  font-size: 14px;
+  color: #b7afaf;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 input,
 select,
 textarea {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 textarea {
-    resize: vertical;
-    height: 100px;
+  resize: vertical;
+  height: 100px;
 }
 
 .button-form {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .button-form:hover {
-    background-color: #45a049;
-
+  background-color: #45a049;
 }
+

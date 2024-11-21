@@ -1,0 +1,121 @@
+h2 {
+  font-size: 2.3rem;
+  
+}
+
+.container-fluid.full-width-bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(184, 235, 183, 0.9),
+      rgba(152, 191, 115, 0.8)
+    ),
+    url("/public/biogas5.png");
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  display: block;
+  position: relative;
+}
+
+.section-benefits {
+  padding: 7rem 0 2rem;
+}
+
+.benefits-flex {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  align-items: flex-start; /*tirar*/
+  margin: 0 10%; /*mudar isso*/
+  width: 80%;
+}
+
+.benefits-title {
+  color: #fff;
+  font-size: 3.2rem;
+  margin-bottom: 3rem; /*tiraR*/
+}
+
+.section-title {
+  width: 100%;
+  font-size: 3.6rem;
+  color: #4caf50;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.benefits-box {
+  position: relative;
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.benefits-box__icon {
+    height: 3.7rem;
+    color: #fff;
+    margin-bottom: 1.1rem;
+    display: inline-block;
+    width: 100%;
+    stroke-width: 0;
+    stroke: #fff;
+    fill: #fff;
+}
+
+.benefits-box__title{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1;
+    color: #fff;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .benefits-box {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-benefits {
+    padding: 4rem 0 2rem;
+  }
+
+  .section {
+    position: static;
+  }
+
+  .benefits-flex {
+    width: 8rem;
+    margin: 2rem 0;
+  }
+
+  .benefits-box__icon{
+    height: 4rem;
+  }
+  .benefits-box__title{
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+
+.benefits-box{
+    width: 14rem;
+}
+}
