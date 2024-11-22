@@ -1,25 +1,11 @@
 import React from "react";
-import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+
 
 const Navbar = () => {
-  
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-    const toggleMenu = () => {
-
-      setIsMenuOpen(!isMenuOpen);
-    };
-
   return (
-<div className="hamburger-menu">
-      {/* Hamburger Button */}
-      <button className="hamburger" onClick={toggleMenu}>
-      {isMenuOpen ? <FaTimes /> : <FaBars />}
-      </button>
-
+    <div className="navbar">
       {/* Menu */}
-      <nav className={`menu ${isMenuOpen ? 'active' : ''}`}>
+      <nav className="menu">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -32,3 +18,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
