@@ -1,0 +1,76 @@
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px auto 40px;
+  
+}
+
+.service-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza a .service-icon dentro de .service-info */
+  justify-content: center;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.service-icon {
+  background-color: #4caf50; /* Cor de fundo */
+  color: white; /* Cor do ícone */
+  border-radius: 50%; /* Formato circular */
+  padding: 10px; /* Espaçamento interno */
+  display: flex;
+  align-items: center; /* Alinha o ícone verticalmente no centro */
+  justify-content: center; /* Alinha o ícone horizontalmente no centro */
+  width: 70px; /* Largura fixa */
+  height: 70px; /* Altura fixa */
+  margin-bottom: 20px; /* Espaçamento abaixo */
+  margin-left: auto; /* Garante que o ícone esteja centralizado horizontalmente */
+  margin-right: auto; /* Garante que o ícone esteja centralizado horizontalmente */
+}
+
+.service-text h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+  color: #333;
+  padding-bottom: 30px;
+}
+
+.service-list {
+  list-style-type: disc;
+  margin: 10px 0 0 20px;
+  padding: 0;
+  color: #666;
+  font-size: .8rem;
+  padding-top: 15px;
+}
+
+.service-list li {
+  margin-bottom: 8px;
+}
+
+.service-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}

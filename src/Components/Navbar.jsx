@@ -7,10 +7,10 @@ const Navbar = () => {
       {/* Menu */}
       <nav className="menu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Startseite</a></li>
+          <li><a href="#">Über uns</a></li>
+          <li><a href="#">Dienstleistung</a></li>
+          <li><a href="#">Kontakt</a></li>
         </ul>
       </nav>
     </div>
