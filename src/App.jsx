@@ -9,6 +9,8 @@ import Profile from "./Components/Profile";
 import Service from "./Components/Service";
 import Datenschutz from "./Components/Datenschutz";
 import AGB from "./Components/Agb";
+import Impressum from "./Components/Impressum";
+
 
 const App = () => {
   return (
@@ -21,6 +23,7 @@ const App = () => {
         <Route path="/service" element={<Service/> } />
         <Route path="/datenschutz" element={<Datenschutz/>} />
         <Route path="/agb" element={<AGB/>} />
+        <Route path="/impressum" element={<Impressum />} />
       </Routes>
       <Footer /> 
         

@@ -53,7 +53,7 @@
 /*MENU*/
 .navbar {
   position: fixed;
-  top: 75px;
+  top: 70px;
   left: 0;
   width: 100%;
   background-color: transparent;
@@ -67,7 +67,7 @@
   display: flex;
   justify-content: end;
   margin: 10px;
-  padding: 20px 15%;
+  padding: 25px 15%;
 }
 
 .menu ul li {
@@ -76,7 +76,7 @@
   color: #45a049;
   font-size: 22px;
   transition: color 0.3s;
-  padding: 10px;
+  padding: 15px;
 }
 
 .menu ul li:hover {
@@ -98,7 +98,6 @@
     display: flex;
     /* Keep header content visible */
   }
-
 
 }
 
@@ -240,7 +239,6 @@
     text-align: center;
   }
 }
-
 /* PROFILE AND AVATAR*/
 
 /* CONTACT FORM */
@@ -251,39 +249,59 @@
   box-shadow: 
   0px -4px 6px rgba(179, 218, 140, 0.8), /* Top shadow */
   0px 4px 6px rgba(179, 218, 140, 0.8);  /* Bottom shadow */
-
 }
 
-h1 {
+.form-title {
   font-size: 24px;
+  margin-bottom: 10px;
+  color: #45a049;
+}
+
+.form-subtitle {
+  font-size: 14px;
+  color: #b7afaf;
+  margin-bottom: 30px;
+}
+
+.personal-data-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 14px;
-  color: #b7afaf;
-  margin-bottom: 20px;
-}
-
-.form-group {
+.personal-data, .form-group {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 15px;
 }
 
-label {
+.form-label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-input,
-select,
-textarea {
+.form-input {
   width: 95%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
+.form-city {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-textarea {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 textarea {
   resize: vertical;
   height: 100px;
@@ -416,3 +434,32 @@ textarea {
 }
 
 /*AGB*/
+
+/*IMPRESSUM*/
+
+.impressum-container {
+  padding: 2% 8%;
+  display: block;
+  align-items: center;
+ 
+}
+
+.impressum-title{
+ font-size: 30px; 
+ color: #45a049;
+}
+
+.impressum-section{
+  padding: 15px;
+}
+
+.impressum-subtitle {
+  font-size: 20px;
+  color: #45a049;
+}
+
+.impressum-text {
+  font-size: 18px
+}
+
+/*IMPRESSUM*/

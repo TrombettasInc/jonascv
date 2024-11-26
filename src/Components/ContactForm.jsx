@@ -3,8 +3,8 @@ import React, { useState, useRef } from 'react';
 const ContactForm = () => {
   
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    completeName: '',
+    companyName: '',
     phone: '',
     email: '',
     city: '',
@@ -33,72 +33,81 @@ const ContactForm = () => {
   
   
     <div className="form-container">
-      <h1>Anfrageformular</h1>
+      <h1 className="form-title">Anfrageformular</h1>
 
       
-      <p>Hinweis: Die Abgabe einer Anfrage ist für Sie unverbindlich und kostenlos!</p>
+      <p className="form-subtitle">Hinweis: Die Abgabe einer Anfrage ist für Sie unverbindlich und kostenlos!</p>
       <form onSubmit={handleSubmit}>
+        <div className='personal-data-container'>
         <div className="personal-data">
-          <label>Vorname</label>
+          <label className="form-label" >Vollständiger Name *</label>
           <input
             type="text"
-            name="firstName"
-            value={formData.firstName}
+            name="completeName"
+            value={formData.completeName}
             onChange={handleChange}
+            required
+            className="form-input"
           />
         </div>
         
         <div className="personal-data">
-          <label>Name *</label>
+          <label className="form-label"  >Firmenname *</label>
           <input
             type="text"
-            name="lastName"
-            value={formData.lastName}
+            name="companyName"
+            value={formData.companyName}
             onChange={handleChange}
             required
+            className="form-input"
           />
         </div>
 
         <div className="personal-data">
-          <label>Telefon *</label>
+          <label className="form-label" >Telefon *</label>
           <input
             type="tel"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
             required
+            className="form-input"
           />
         </div>
 
         <div className="personal-data">
-          <label>E-Mail *</label>
+          <label className="form-label"  >E-Mail *</label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
             required
+            className="form-input"
           />
+        </div>
         </div>
 
         <div className="form-group">
-          <label>In welcher Stadt befindet sich Ihr Unternehmen?*</label>
+          <label className="form-label" >In welcher Stadt befindet sich Ihr Unternehmen?*</label>
           <input
             type="text"
             name="city"
             value={formData.city}
             onChange={handleChange}
             required
+            className="form-city"
           />
         </div>
 
         <div className="form-group">
-          <label>Ihre Anfrage *</label>
+          <label className="form-label" >Ihre Anfrage *</label>
           <textarea
             name="request"
             value={formData.request}
             onChange={handleChange}
             required
+            className="form-textarea"
           ></textarea>
         </div>
 
