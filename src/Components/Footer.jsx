@@ -13,7 +13,7 @@ const Footer = () => {
           AGB
         </a>
         <a href="/datenschutz" className='footer-link'>
-          Daten Schutz
+          Datenschutz
         </a>
         <a href="/impressum" className='footer-link' >
           Impressum

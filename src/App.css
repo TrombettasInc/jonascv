@@ -352,6 +352,67 @@ textarea {
   text-decoration: none;
 }
 
-
 /*FOOTER*/
 
+/*DATEN*/
+
+.daten-container {
+  padding: 2% 8%;
+  display: block;
+  align-items: center;
+ 
+}
+
+.daten-h{
+ font-size: 30px; 
+ color: #45a049;
+}
+
+.daten-section{
+  padding: 15px;
+}
+
+.daten-htwo {
+  font-size: 20px;
+  color: #45a049;
+}
+
+.daten-p {
+  font-size: 18px
+}
+
+.daten-ul {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 18px;
+  color:#b7afaf;
+}
+
+/*DATEN*/
+
+/*AGB*/
+.agb-container {
+  padding: 2% 8%;
+  display: block;
+  align-items: center;
+ 
+}
+
+.agb-title{
+ font-size: 30px; 
+ color: #45a049;
+}
+
+.agb-section{
+  padding: 15px;
+}
+
+.agb-subtitle {
+  font-size: 20px;
+  color: #45a049;
+}
+.agb-text {
+  font-size: 18px
+}
+
+/*AGB*/

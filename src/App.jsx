@@ -8,6 +8,7 @@ import  "./App.css"
 import Profile from "./Components/Profile";
 import Service from "./Components/Service";
 import Datenschutz from "./Components/Datenschutz";
+import AGB from "./Components/Agb";
 
 const App = () => {
   return (
@@ -18,8 +19,11 @@ const App = () => {
         <Route path="/profile" element={<Profile/>} />
         <Route path="/contact" element={<ContactForm/>} />
         <Route path="/service" element={<Service/> } />
+        <Route path="/datenschutz" element={<Datenschutz/>} />
+        <Route path="/agb" element={<AGB/>} />
       </Routes>
-      <Footer  path="/datenschutz" element={<Datenschutz/>} />
+      <Footer /> 
+        
     </Router>
   );
 };

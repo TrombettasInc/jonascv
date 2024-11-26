@@ -2,7 +2,7 @@ import React from 'react';
 
 const Datenschutz = () => {
   return (
-    <div>
+    <div className='daten-container'>
       <h1 className='daten-h'>Datenschutzerklärung</h1>
 
       <section className='daten-section'>
@@ -38,8 +38,8 @@ const Datenschutz = () => {
           Beim Zugriff auf diese Website werden durch den Webhosting-Anbieter automatisch Informationen in sogenannten
           Server-Logfiles gespeichert. Diese beinhalten:
         </p>
-        <ul>
-          <li>Datum und Uhrzeit des Zugriffs</li>
+        <ul className='daten-ul'>
+          <li >Datum und Uhrzeit des Zugriffs</li>
           <li>Angeforderte Datei</li>
           <li>IP-Adresse des anfragenden Geräts</li>
           <li>Browsertyp und -version</li>
@@ -55,7 +55,7 @@ const Datenschutz = () => {
         <p className='daten-p'>
           Nach der DSGVO haben Nutzer ein Recht auf:
         </p>
-        <ul>
+        <ul className='daten-ul'>
           <li>Auskunft über gespeicherte Daten</li>
           <li>Berichtigung oder Löschung personenbezogener Daten</li>
           <li>Einschränkung der Datenverarbeitung</li>
