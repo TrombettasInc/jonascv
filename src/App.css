@@ -70,7 +70,7 @@
   padding: 20px 15%;
 }
 
-.menu ul li a {
+.menu ul li {
   text-decoration: none;
   font-weight: lighter;
   color: #45a049;
@@ -79,7 +79,7 @@
   padding: 10px;
 }
 
-.menu ul li a:hover {
+.menu ul li:hover {
   color: #fff;
   background-color: #45a049;
   border-radius: 5%;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 const ContactForm = () => {
   
@@ -29,8 +29,13 @@ const ContactForm = () => {
   };
 
   return (
+    <>
+  
+  
     <div className="form-container">
       <h1>Anfrageformular</h1>
+
+      
       <p>Hinweis: Die Abgabe einer Anfrage ist für Sie unverbindlich und kostenlos!</p>
       <form onSubmit={handleSubmit}>
         <div className="personal-data">
@@ -103,6 +108,7 @@ const ContactForm = () => {
         </div>
       </form>
     </div>
+    </>
   );
 };
 

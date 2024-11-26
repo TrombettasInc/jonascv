@@ -12,15 +12,13 @@ const Footer = () => {
         <a href="/agb" className='footer-link'>
           AGB
         </a>
-        <a href="/daten-schutz" className='footer-link'>
+        <a href="/datenschutz" className='footer-link'>
           Daten Schutz
         </a>
-        <a href="/impressum" className='footer-link'>
+        <a href="/impressum" className='footer-link' >
           Impressum
         </a>
-        <a href="/cookie-einstellung" className='footer-link'>
-          Cookie Einstellung
-        </a>
+       
       </div>
     </footer>
   )

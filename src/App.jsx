@@ -4,11 +4,10 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import ContactForm from "./Components/ContactForm";
 import Home from "./Pages/Home";
-import About from "./Pages/About"
-
 import  "./App.css"
 import Profile from "./Components/Profile";
 import Service from "./Components/Service";
+import Datenschutz from "./Components/Datenschutz";
 
 const App = () => {
   return (
@@ -20,7 +19,7 @@ const App = () => {
         <Route path="/contact" element={<ContactForm/>} />
         <Route path="/service" element={<Service/> } />
       </Routes>
-      <Footer />
+      <Footer  path="/datenschutz" element={<Datenschutz/>} />
     </Router>
   );
 };
