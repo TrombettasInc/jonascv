@@ -7,6 +7,8 @@ import Home from "./Pages/Home";
 import About from "./Pages/About"
 
 import  "./App.css"
+import Profile from "./Components/Profile";
+import Service from "./Components/Service";
 
 const App = () => {
   return (
@@ -14,8 +16,9 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/profile" element={<Profile/>} />
         <Route path="/contact" element={<ContactForm/>} />
+        <Route path="/service" element={<Service/> } />
       </Routes>
       <Footer />
     </Router>

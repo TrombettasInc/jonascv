@@ -8,7 +8,7 @@ const Profile = () => {
         <img className='profile-avatar' src="../src/assets/avatar.jpg" alt="avatar" />
       </div>
       <div className='profile-card'>
-        <h1 className='profile-name'>Jonas Dobrint</h1>
+        <h1 className='profile-name'>Jonas Dobrindt</h1>
         <ul className="profile-list">
           <li className="profile-item">
             <span className="profile-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 1</span>
