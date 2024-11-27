@@ -103,7 +103,7 @@
 
 /* For smaller screens (<= 1024px): Hide the hamburger icon and dropdown */
 @media (max-width: 1024px) {
-  .hamburger {
+  .menu {
     display: none;
     /* Hide hamburger on small screens */
   }
@@ -111,7 +111,9 @@
 
   .header-content {
     display: flex;
-    /* Normal header content on smaller screens */
+    justify-content: center;
+    gap: 7%;
+    
   }
 
   .contact-info {
@@ -119,16 +121,17 @@
     position: relative;
     font-size: 15px;
     margin-top: 10%;
+
   }
 
   .icons-header {
     align-items: center;
-    justify-content: space-around;
   }
 
   .logo {
-    margin-left: 10%;
+    margin-left: 1%;
   }
+
 }
 
 .photo img {
@@ -218,7 +221,7 @@
     /* Ensure the container itself is centered */
     transform: none;
     /* Remove the transform property */
-    top: 58%;
+    top: 42%;
     /* Clear the top positioning */
     left: 35%;
   }
@@ -238,6 +241,15 @@
   .profile-card h1 {
     text-align: center;
   }
+
+  .personal-data-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .form-city, .form-textarea {
+    width: 95% !important;
+  }
+
 }
 /* PROFILE AND AVATAR*/
 

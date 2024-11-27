@@ -85,37 +85,49 @@ h2 {
     color: #fff;
 }
 
-@media only screen and (max-width: 37.5em) {
-  .benefits-box {
-    width: 30%;
-  }
-}
 
-@media only screen and (max-width: 56.25em) {
+
+  /* Banner.css */
+
+/* Estilos para tamanhos de celular */
+@media (max-width: 768px) {
   .section-benefits {
-    padding: 4rem 0 2rem;
-  }
-
-  .section {
-    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
   }
 
   .benefits-flex {
-    width: 8rem;
-    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
   }
 
-  .benefits-box__icon{
-    height: 4rem;
+  .benefits-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
   }
-  .benefits-box__title{
-    font-size: 1.2rem;
+
+  .benefits-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .benefits-box__icon {
+    font-size: 2rem;
+    color: #4caf50; /* Ajuste conforme necessário */
+  }
+
+  .benefits-box__title {
+    font-size: 1rem;
+    color: #fff; /* Ajuste conforme necessário */
   }
 }
 
-@media only screen and (max-width: 75em) {
 
-.benefits-box{
-    width: 14rem;
-}
-}
