@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaListAlt } from 'react-icons/fa';
 import './Service.css';
+import biogas7 from "../assets/biogas7.jpeg"
 
 const Service = () => {
   return (
@@ -20,7 +21,7 @@ const Service = () => {
           </div>
         </div>
         <div className="service-image">
-          <img src="./src/assets/biogas7.jpeg" alt="Service Beispiel" />
+          <img src={biogas7} alt="Service Beispiel" />
         </div>
       </div>
     </div>

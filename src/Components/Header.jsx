@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
-import fotoP from "../assets/fotoP.jpeg"
 import biogas8 from "../assets/biogas8.jpg"
 
 const Header = () => {
