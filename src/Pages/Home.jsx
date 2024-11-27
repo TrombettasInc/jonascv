@@ -3,7 +3,7 @@ import Profile from "../Components/Profile";
 import Service from "../Components/Service";
 import ContactForm from "../Components/ContactForm";
 import Banner from "../Components/Banner";
-import Extras from "../Components/Extras";
+import BackToTop from "../Components/BackToTop";
 import Navbar from "../Components/Navbar";
 
 const Home = () => {
@@ -38,7 +38,7 @@ const Home = () => {
         <Banner />
       </div>
       <div ref={extrasRef}>
-        <Extras />
+        <BackToTop />
       </div>
     </div>
   );

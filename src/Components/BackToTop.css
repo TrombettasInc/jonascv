@@ -1,0 +1,49 @@
+.back-to-top {
+    position: fixed; /* Fixa o botão na viewport */
+    bottom: 20px; /* Distância da parte inferior da janela */
+    right: 20px; /* Distância da parte direita da janela */
+    background-color: #45a049;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Garante que o botão ficará acima de outros elementos */
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 70%;
+  }
+  
+  .back-to-top:hover {
+    background-color: #27752b;
+  }
+  
+  .back-to-top:active {
+    transform: scale(0.95);
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-top {
+      width: 40px; /* Reduz o tamanho do botão */
+      height: 40px;
+      font-size: 30px; /* Ajusta o tamanho do ícone */
+      bottom: 15px; /* Menor margem inferior */
+      right: 45px; /* Menor margem lateral */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .back-to-top {
+      width: 50px; /* Botão ainda menor para telas bem pequenas */
+      height: 50px;
+      font-size: 30px;
+      bottom: 10px; /* Margem ainda menor */
+      right: 45px;
+    }
+  }
+  
