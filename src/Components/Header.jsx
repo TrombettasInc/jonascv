@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
 import biogas8 from "../assets/biogas8.jpg"
+import logo from "../assets/logo.png"
 
 const Header = () => {
 
@@ -13,7 +14,7 @@ const Header = () => {
     <div className='header-main'>
     <header className="header-container">
       <div className="header-content">
-      <img className='logo' src="./src/assets/1-removebg-preview.png" alt="logo" />
+      <img className='logo' src={logo} alt="logo" />
         <div className="contact-info">
         <FaEnvelope className='icons-header'/>
           <a href={`mailto:${email}`} className="contact-link">
