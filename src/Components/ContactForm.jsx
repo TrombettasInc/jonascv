@@ -114,7 +114,7 @@ const ContactForm = () => {
         </div>
 
         <input type="hidden" name="_autoresponse" value="Danke, dass Sie Jonas Dobrindt kontaktiert haben. Wir haben Ihre Anfrage erhalten und werden uns so schnell wie möglich bei Ihnen melden."/>
-
+        <input type="hidden" name="_template" value="table"/>
         <input type="hidden" name="_next" value="http://localhost:5173/" />
 
         <div className="form-group">
