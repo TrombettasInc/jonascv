@@ -265,6 +265,13 @@
   }
   
 }
+/* iPhone 8 Plus */
+@media (max-width: 414px) and (min-height: 736px) {
+  .avatar-container {
+    top: 50%; /* Ajuste para o iPhone */
+  }
+}
+
 
 
 /* PROFILE AND AVATAR*/
