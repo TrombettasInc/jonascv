@@ -242,6 +242,22 @@
     width: 95% !important;
   }
 }
+
+@media (max-width: 414px) {
+  .avatar-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro */
+    position: absolute; /* Permite o uso de top e left */
+    top: 55%; /* Move para o centro vertical */
+    left: 50%; /* Move para o centro horizontal */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Ajusta para centralizar perfeitamente */
+  }
+  
+}
 /* PROFILE AND AVATAR*/
 
 /* CONTACT FORM */
