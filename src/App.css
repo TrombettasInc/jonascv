@@ -14,7 +14,7 @@
   z-index: 1000;
   /* Certifique-se de que o header fique acima de outros elementos */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 0.5rem;
   height: 130px;
 }
 
@@ -50,6 +50,7 @@
   border-radius: 50%;
 }
 
+
 /*MENU*/
 .navbar {
   position: fixed;
@@ -66,7 +67,6 @@
   list-style: none;
   display: flex;
   justify-content: end;
-  margin: 10px;
   padding: 25px 15%;
 }
 
@@ -98,7 +98,6 @@
     display: flex;
     /* Keep header content visible */
   }
-
 }
 
 /* For smaller screens (<= 1024px): Hide the hamburger icon and dropdown */
@@ -108,12 +107,10 @@
     /* Hide hamburger on small screens */
   }
 
-
   .header-content {
     display: flex;
     justify-content: center;
     gap: 7%;
-    
   }
 
   .contact-info {
@@ -121,7 +118,6 @@
     position: relative;
     font-size: 15px;
     margin-top: 10%;
-
   }
 
   .icons-header {
@@ -131,7 +127,6 @@
   .logo {
     margin-left: 1%;
   }
-
 }
 
 .photo img {
@@ -209,21 +204,17 @@
     height: 19rem;
     background-size: cover;
   }
-
   .avatar-container {
     display: flex;
-    /* Use flexbox for centering */
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically if necessary */
-    margin: 0 auto;
-    /* Ensure the container itself is centered */
-    transform: none;
-    /* Remove the transform property */
-    top: 42%;
-    /* Clear the top positioning */
-    left: 35%;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro */
+    align-items: center; /* Centraliza verticalmente o conteúdo dentro */
+    position: absolute; /* Permite o uso de top e left */
+    top: 50%; /* Move para o centro vertical */
+    left: 50%; /* Move para o centro horizontal */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Ajusta para centralizar perfeitamente */
   }
 
   .profile-avatar {
@@ -246,10 +237,10 @@
     grid-template-columns: 1fr !important;
   }
 
-  .form-city, .form-textarea {
+  .form-city,
+  .form-textarea {
     width: 95% !important;
   }
-
 }
 /* PROFILE AND AVATAR*/
 
@@ -258,9 +249,8 @@
   max-width: 800px;
   margin: 15px auto;
   padding: 20px;
-  box-shadow: 
-  0px -4px 6px rgba(179, 218, 140, 0.8), /* Top shadow */
-  0px 4px 6px rgba(179, 218, 140, 0.8);  /* Bottom shadow */
+  box-shadow: 0px -4px 6px rgba(179, 218, 140, 0.8),
+    /* Top shadow */ 0px 4px 6px rgba(179, 218, 140, 0.8); /* Bottom shadow */
 }
 
 .form-title {
@@ -275,14 +265,15 @@
   margin-bottom: 30px;
 }
 
-.personal-data-container{
+.personal-data-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   margin-bottom: 10px;
 }
 
-.personal-data, .form-group {
+.personal-data,
+.form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
@@ -377,7 +368,7 @@ textarea {
   text-decoration: none;
 }
 
-.footer-contact a:hover{
+.footer-contact a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -390,15 +381,14 @@ textarea {
   padding: 2% 8%;
   display: block;
   align-items: center;
- 
 }
 
-.daten-h{
- font-size: 30px; 
- color: #45a049;
+.daten-h {
+  font-size: 30px;
+  color: #45a049;
 }
 
-.daten-section{
+.daten-section {
   padding: 15px;
 }
 
@@ -408,14 +398,14 @@ textarea {
 }
 
 .daten-p {
-  font-size: 18px
+  font-size: 18px;
 }
 
 .daten-ul {
   text-decoration: none;
   list-style-type: none;
   font-size: 18px;
-  color:#b7afaf;
+  color: #b7afaf;
 }
 
 /*DATEN*/
@@ -425,15 +415,14 @@ textarea {
   padding: 2% 8%;
   display: block;
   align-items: center;
- 
 }
 
-.agb-title{
- font-size: 30px; 
- color: #45a049;
+.agb-title {
+  font-size: 30px;
+  color: #45a049;
 }
 
-.agb-section{
+.agb-section {
   padding: 15px;
 }
 
@@ -442,7 +431,7 @@ textarea {
   color: #45a049;
 }
 .agb-text {
-  font-size: 18px
+  font-size: 18px;
 }
 
 /*AGB*/
@@ -453,15 +442,14 @@ textarea {
   padding: 2% 8%;
   display: block;
   align-items: center;
- 
 }
 
-.impressum-title{
- font-size: 30px; 
- color: #45a049;
+.impressum-title {
+  font-size: 30px;
+  color: #45a049;
 }
 
-.impressum-section{
+.impressum-section {
   padding: 15px;
 }
 
@@ -471,7 +459,7 @@ textarea {
 }
 
 .impressum-text {
-  font-size: 18px
+  font-size: 18px;
 }
 
 /*IMPRESSUM*/

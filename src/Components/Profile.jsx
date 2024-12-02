@@ -11,7 +11,7 @@ const Profile = () => {
         <h1 className='profile-name'>Jonas Dobrindt</h1>
         <ul className="profile-list">
           <li className="profile-item">
-            <span className="profile-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 1</span>
+            <span className="profile-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 1</span>
           </li>
           <li className="profile-item">
             
