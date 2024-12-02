@@ -249,7 +249,7 @@
     justify-content: center; /* Centraliza horizontalmente o conteúdo dentro */
     align-items: center; /* Centraliza verticalmente o conteúdo dentro */
     position: absolute; /* Permite o uso de top e left */
-    top: 55%; /* Move para o centro vertical */
+    top: 60%; /* Move para o centro vertical */
     left: 50%; /* Move para o centro horizontal */
     transform: translate(
       -50%,
