@@ -252,7 +252,7 @@
     justify-content: center; /* Centraliza horizontalmente o conteúdo dentro */
     align-items: center; /* Centraliza verticalmente o conteúdo dentro */
     position: absolute; /* Permite o uso de top e left */
-    top: 60%; /* Move para o centro vertical */
+    top: 55%; /* Move para o centro vertical */
     left: 50%; /* Move para o centro horizontal */
     transform: translate(
       -50%,
@@ -261,27 +261,7 @@
   }
 
   .logo {
-    margin-left: 50px;
-  }
-  
-}
-
-@media (max-width: 360px) {
-  .avatar-container {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro */
-    align-items: center; /* Centraliza verticalmente o conteúdo dentro */
-    position: absolute; /* Permite o uso de top e left */
-    top: 50%; /* Move para o centro vertical */
-    left: 50%; /* Move para o centro horizontal */
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Ajusta para centralizar perfeitamente */
-  }
-
-  .logo {
-    margin-left: 50px;
+    margin-left: 10px;
   }
   
 }
