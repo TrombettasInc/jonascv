@@ -268,14 +268,14 @@
 /* iPhone 8 Plus */
 @media (max-width: 414px) and (min-height: 736px) {
   .avatar-container {
-    top: 60% !important; /* Ajuste para o iPhone */
+    top: 65% !important; /* Ajuste para o iPhone */
   }
 }
 
 /* Galaxy S20 */
 @media (max-width: 414px) and (min-height: 800px) {
   .avatar-container {
-    top: 55% !important; /* Mantém o ajuste do Galaxy */
+    top: 52% !important; /* Mantém o ajuste do Galaxy */
   }
 }
 
