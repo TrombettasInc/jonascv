@@ -32,7 +32,7 @@ const ContactForm = () => {
         kostenlos!
       </p>
       <form
-        action="https://formsubmit.co/antonia.dorazio@gmail.com"
+        action="https://formsubmit.co/jonas.d2@hotmail.de"
         method="POST"
         onSubmit={(e) => {
           handleFormSuccess();
